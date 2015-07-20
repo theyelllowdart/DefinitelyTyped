@@ -41,13 +41,14 @@ declare module soundcloud {
     playback_count: number;
     favoritings_count: number;
     description?: string;
+    user: User;
   }
 
   interface Playlist extends BaseResource {
     title: string;
   }
 
-  interface Resource extends User, Track {
+  interface Resource extends Track {
   }
 
   interface SearchResponse {
