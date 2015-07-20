@@ -35,6 +35,7 @@ declare module spotify {
 
   interface Album {
     images:Array<Image>;
+    name:string;
   }
 
   interface Image {
