@@ -21,10 +21,14 @@ declare module spotify {
     artists:Array<MiniArtist>;
     duration_ms:number;
     stream_url:string;
-    external_urls:string;
+    external_urls:ExternalURLs;
   }
 
   interface MiniArtist {
     name:string
+  }
+
+  interface ExternalURLs {
+    spotify:string;
   }
 }
