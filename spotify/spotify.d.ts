@@ -22,6 +22,7 @@ declare module spotify {
     duration_ms:number;
     stream_url:string;
     external_urls:ExternalURLs;
+    album:Album;
   }
 
   interface MiniArtist {
@@ -30,5 +31,13 @@ declare module spotify {
 
   interface ExternalURLs {
     spotify:string;
+  }
+
+  interface Album {
+    images:Array<Image>;
+  }
+
+  interface Image {
+    url:string;
   }
 }
