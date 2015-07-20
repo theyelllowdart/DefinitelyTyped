@@ -41,4 +41,9 @@ declare module spotify {
   interface Image {
     url:string;
   }
+
+  interface User {
+    avatar_url:string;
+    username:string;
+  }
 }
